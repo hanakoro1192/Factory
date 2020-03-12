@@ -1,20 +1,21 @@
 package idcard;
+
 import framework.*;
 
-public class IDcard{
-    private String owner; //フィールドの作成
+public class IDcard extends Product {
+    private String owner; // フィールドの作成
 
-    //コンストラクタ
-    IDcard(String owner){
+    // コンストラクタ
+    IDcard(String owner) {
         System.out.println(owner + "のカードを使います");
         this.owner = owner;
     }
 
-    public void use(){
+    public void use() {
         System.out.println(owner + "のカードを使います");
     }
 
-    public String getOwner(){
+    public String getOwner() {
         return owner;
     }
 }
